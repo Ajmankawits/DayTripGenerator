@@ -9,7 +9,8 @@ def pick_random_destination(destinations):
     print("We chose", random_destination, "for your destination! Is this good? Enter: y/n:")
     destination_input = input('')
     while destination_input == 'n':
-        print("How about", random.choice(destinations), "is this better? Enter: y/n:")
+        random_destination = random.choice(destinations)
+        print("How about", random_destination, "is this better? Enter: y/n:")
         destination_input = input ('')
         if destination_input == 'y':
             print("Great, lets pick out the next part of your trip!")
@@ -21,7 +22,8 @@ def pick_random_transport(transport):
     print("We found a", transport, "is this good? Enter: y/n")
     transport_input = input('')
     while transport_input == 'n':
-        print("We also have a", random.choice(transportation), "is this better? Enter: y/n")
+        transport = random.choice(transportation)
+        print("We also have a", transport, "is this better? Enter: y/n")
         transport_input = input('')
         if transport_input == 'y':
           print("Great, lets pick out the next part of your trip!")   
@@ -33,7 +35,8 @@ def pick_random_entertainment(entertainment):
     print("We chose", entertainment, "for your entertainment tonight! Is this good? Enter: y/n")
     entertainment_input = input('')
     while entertainment_input == 'n':
-        print("Dont like that option? No problem how about",random.choice(entertainments), "is this better? Enter: y/n" )
+        entertainment = random.choice(entertainments)
+        print("Dont like that option? No problem how about",entertainment, "is this better? Enter: y/n" )
         entertainment_input = input('')
         if entertainment_input == 'y':
             print("Great, lets pick out the next part of your trip!")
@@ -45,7 +48,8 @@ def pick_random_restaurant(restaurant):
     print("We chose", restaurant, "for your restaurant is this good? Enter: y/n")
     restaurant_input = input('')
     while restaurant_input == 'n':
-        print("Oh im sorry you dont like that option, how about",random.choice(restaurants), "is this better? Enter: y/n" )
+        restaurant = random.choice(restaurants)
+        print("Oh im sorry you dont like that option, how about",restaurant, "is this better? Enter: y/n" )
         restaurant_input = input('')
         if restaurant_input == 'y':
             print("Great, lets move on!")
